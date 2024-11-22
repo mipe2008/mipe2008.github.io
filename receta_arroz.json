@@ -1,0 +1,12 @@
+python
+import json
+
+# Especificamos el nombre del archivo JSON
+nombre_archivo = 'receta_arroz.json'
+
+# Abrimos el archivo en modo escritura
+with open(nombre_archivo, 'w', encoding='utf-8') as f:
+    # Usamos json.dump para escribir el diccionario en el archivo
+    json.dump(receta_arroz, f, ensure_ascii=False, indent=4)
+
+print(f"Archivo '{nombre_archivo}' creado exitosamente.")

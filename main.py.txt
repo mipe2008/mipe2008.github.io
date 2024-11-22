@@ -1,0 +1,11 @@
+import json
+def cargar_datos(ruta):
+with open(ruta) as contenido:
+receta_arroz = json. load (contenido)
+for receta_arroz in receta_arroz:
+print(receta_arroz.get('nombre'))
+print(receta_arroz.get('duracion', ))
+
+if__main__== '__main__':
+ruta = 'RECETA/receta_arroz.json'
+cargar_datos(ruta)
